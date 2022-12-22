@@ -11,16 +11,16 @@ jobs:
   build:
     run-on: ubuntu-latest
 
-    steps:
+     steps:
       - name: 'Testing Github action'
         run: pwd
       
 
 
-      - name: 'Before'
-         run: ls 
+     - name: 'Before'
+       run: ls 
 
-       - user: actions/checkout@v3
+     - user: actions/checkout@v3
 
-       - name: 'After'
-         run: ls 
+     - name: 'After'
+        run: ls 

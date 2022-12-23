@@ -15,12 +15,14 @@ jobs:
     steps:
 
       - uses: actions/checkout@v3
+      - name: "login to docker hub"
+        runs: docker login --username eyade --password dckr_pat_mLKDwisbCR4HlJJtYAHN7l6tUZw
+        
+      # - name: 'Testing Github action'
+      #   run: pwd
 
-      - name: 'Testing Github action'
-        run: pwd
+      # - name: 'Before'
+      #   run: ls 
 
-      - name: 'Before'
-        run: ls 
-
-      - name: 'After'
-        run: ls 
+      # - name: 'After'
+      #   run: ls 
